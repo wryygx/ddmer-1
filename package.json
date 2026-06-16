@@ -5,7 +5,7 @@
   "scripts": {
     "dev": "next dev",
     "dev:clean": "rm -rf .next/dev && next dev",
-    "build": "cd admin && pnpm install && pnpm build && cd .. && prisma generate && next build",
+    "build": "rm -rf public/admin && cd admin && pnpm install && pnpm build && cd .. && prisma generate && next build",
     "start": "next start",
     "lint": "eslint",
     "db:push": "prisma db push",

@@ -6,7 +6,7 @@
   "scripts": {
     "dev": "set NODE_OPTIONS=--max-old-space-size=4096 && vite",
     "serve": "pnpm dev",
-    "build": "rimraf dist && vite build",
+    "build": "vite build",
     "build:staging": "rimraf dist && vite build --mode staging",
     "report": "rimraf dist && vite build",
     "preview": "vite preview",
