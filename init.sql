@@ -403,5 +403,5 @@ CREATE INDEX IF NOT EXISTS "email_verification_code_idx" ON "email_verification"
 -- 首次登录后请立即在后台修改密码！
 -- 已存在则跳过，可安全重复执行
 INSERT INTO "user" ("username", "hashed_password", "nickname", "is_admin", "created_at", "updated_at")
-VALUES ('admin', '$2b$10$XtrNULa4zsesynXMuflT1.QQJG/KNegCPp3FZCphAowDVOqr.B5LO', '管理员', true, CURRENT_TIMESTAMP, CURRENT_TIMESTAMP)
+VALUES ('admin', '$2b$10$mL5.rtwJCuWteWAvDLxnOuNHSN9W3oA7epS0.fZ2SvM6ve4pCpMEa', '管理员', true, CURRENT_TIMESTAMP, CURRENT_TIMESTAMP)
 ON CONFLICT ("username") DO NOTHING;
